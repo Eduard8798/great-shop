@@ -4,7 +4,7 @@ import girlLogin from '../../../../public/girlLogin.png'
 export default function LoginForm() {
     return (
         <div className={styles.container}>
-            {/* Левая половина с фото */}
+            {/*  половина с фото */}
             <div className={styles.left}>
                 <Image
                     src={girlLogin} // помести свое фото в public/
