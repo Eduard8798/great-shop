@@ -1,17 +1,18 @@
+@use "@/styles/variables" as *;
+
 .container {
     display: flex;
     height: 100vh;
     width: 100vw;
-    font-family: Arial, sans-serif;
 }
 
-/* Левая половина */
+/* Left side */
 .left {
     flex: 1;
     position: relative;
 }
 
-/* Правая половина */
+/* Right side */
 .right {
     flex: 1;
 
@@ -20,11 +21,10 @@
     /*justify-content: center;*/
     /*align-items: center;*/
     padding: 0 100px;
-    background-color: #fff;
+    background-color: $color-white;
 }
 
 .title {
-
     font-size: 3rem;
     font-weight: bold;
     margin: 100px 0 50px 0px;
@@ -44,18 +44,17 @@
 
 .googleBtn {
     border-radius: 12px;
-    margin: 0 ;
+    margin: 0;
     background-color: #fdfdfd;
     color: #030303;
     border: 1px solid #95bcff;
     padding: 10px 20px;
     cursor: pointer;
-
 }
 
 .emailBtn {
     border-radius: 12px;
-    margin: 0 ;
+    margin: 0;
     background-color: #fdfdfd;
     color: #030303;
     border: 1px solid #95bcff;
@@ -64,7 +63,7 @@
 }
 
 .or {
-    margin: 35px ;
+    margin: 35px;
     font-weight: bold;
     font-size: 36px;
 }
@@ -79,18 +78,16 @@
     font-size: 1rem;
 }
 
-.topBnt{
-
+.topBnt {
 }
-
 
 .signInBtn {
     width: 80%;
     padding: 12px;
     border-radius: 12px;
     margin-top: 20px;
-    background-color: #000;
-    color: #fff;
+    background-color: $color-black;
+    color: $color-white;
     border: none;
     cursor: pointer;
 }
@@ -101,8 +98,8 @@
     border-radius: 12px;
     margin-top: 10px;
     background-color: transparent;
-    color: #284d87;
-    border: 1px solid #284d87;
+    color: $color-blue;
+    border: 1px solid $color-blue;
     cursor: pointer;
 }
 
@@ -110,10 +107,10 @@
     margin-top: 15px;
     width: 100%;
     text-align: right;
-}
 
-.forgot a {
-    text-decoration: none;
-    color: #000;
-    font-size: 0.9rem;
+    a {
+        text-decoration: none;
+        color: $color-black;
+        font-size: 0.9rem;
+    }
 }

@@ -1,0 +1,6 @@
+@use 'tailwindcss' as *;
+@use "@/styles/variables" as *;
+
+body {
+    font-family: $font-family;
+}

@@ -1,26 +1,25 @@
-import "./globals.css";
+import "@/styles/global.scss";
+
 import Header from "@/components/layout/Header/Header";
 import Footer from "@/components/layout/Footer";
 
 export default function RootLayout({
-                                       children,
-                                   }: Readonly<{
+    children,
+}: Readonly<{
     children: React.ReactNode;
 }>) {
     return (
         <html lang="en">
-        <body >
-        {/* Header */}
-        <Header />
+            <body>
+                {/* Header */}
+                <Header />
 
-        {/* Основной контент */}
-        <main >
-            {children}
-        </main>
+                {/* Main content */}
+                <main>{children}</main>
 
-        {/* Footer */}
-        <Footer />
-        </body>
+                {/* Footer */}
+                <Footer />
+            </body>
         </html>
     );
 }
