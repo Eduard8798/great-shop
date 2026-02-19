@@ -20,6 +20,7 @@
     /*flex-direction: column;*/
     /*justify-content: center;*/
     /*align-items: center;*/
+    margin: 0 0 0 10%;
     padding: 0 100px;
     background-color: $color-white;
 }
@@ -27,7 +28,7 @@
 .title {
     font-size: 3rem;
     font-weight: bold;
-    margin: 100px 0 50px 0px;
+    margin: 10% 0 10% 0;
 }
 
 .subtitle {
@@ -37,9 +38,8 @@
 
 .socialButtons {
     display: flex;
-    justify-content: flex-start;
-    gap: 20px;
-    margin-bottom: 20px;
+    width: 100%; /* обязательно, чтобы растянулось на всю ширину */
+    padding: 0;
 }
 
 .googleBtn {
@@ -60,13 +60,29 @@
     border: 1px solid #95bcff;
     padding: 10px 20px;
     cursor: pointer;
+    margin-left: auto;
 }
 
 .or {
-    margin: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
     font-weight: bold;
     font-size: 36px;
+    margin: 8%;
+    .line{
+
+        margin: 3px;
+        display: inline-block;
+        transform: scaleX(3);
+    }
+    .text{
+        white-space: nowrap;
+    }
 }
+
+
 
 .inputField {
     width: 100%;
@@ -79,6 +95,8 @@
 }
 
 .topBnt {
+    margin: 10%;
+
 }
 
 .signInBtn {

@@ -29,7 +29,11 @@ export default function LoginForm() {
                     </button>
                 </div>
 
-                <div className={styles.or}>- OR -</div>
+                <div className={styles.or}>
+                    <p className={styles.line}>-</p>
+                    <p className={styles.text}>OR</p>
+                    <p className={styles.line}>-</p>
+                </div>
 
                 <input
                     type="email"
