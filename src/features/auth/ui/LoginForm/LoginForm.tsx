@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "../LoginForm/Login.module.scss";
-import girlLogin from "../../../../public/girlLogin.png";
+import girlLogin from "../../../../../public/images/girlLogin.png";
 
 export default function LoginForm() {
     return (
