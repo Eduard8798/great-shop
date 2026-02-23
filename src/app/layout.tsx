@@ -1,7 +1,7 @@
 import "@/styles/global.scss";
 
-import Header from "@/components/layout/Header/Header";
-import Footer from "@/components/layout/Footer";
+import Header from "@/widgets/Header/Header";
+import Footer from "@/widgets/Footer/Footer";
 
 export default function RootLayout({
     children,
