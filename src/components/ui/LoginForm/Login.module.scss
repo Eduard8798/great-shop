@@ -10,6 +10,7 @@
 .left {
     flex: 1;
     position: relative;
+
 }
 
 /* Right side */
@@ -18,11 +19,15 @@
 
     /*display: flex;*/
     /*flex-direction: column;*/
-    /*justify-content: center;*/
-    /*align-items: center;*/
-    margin: 0 0 0 10%;
-    padding: 0 100px;
+    //justify-content: center;
+    //align-items: center;
+
+
     background-color: $color-white;
+}
+.rigthWidth{
+    margin: 0 10%  ;
+    padding: 0 15% 0 15%;
 }
 
 .title {
@@ -37,51 +42,65 @@
 }
 
 .socialButtons {
+
     display: flex;
-    width: 100%; /* обязательно, чтобы растянулось на всю ширину */
-    padding: 0;
+    gap: 10%;
+    //align-items: stretch;
+    width: 100%;
+    //padding: 0;
 }
 
 .googleBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
     border-radius: 12px;
-    margin: 0;
+
     background-color: #fdfdfd;
     color: #030303;
     border: 1px solid #95bcff;
     padding: 10px 20px;
+    min-width: 300px;
     cursor: pointer;
 }
 
 .emailBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
     border-radius: 12px;
-    margin: 0;
+
     background-color: #fdfdfd;
     color: #030303;
     border: 1px solid #95bcff;
     padding: 10px 20px;
+    min-width: 300px;
     cursor: pointer;
-    margin-left: auto;
 }
 
 .or {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 15px;
     font-weight: bold;
     font-size: 36px;
-    margin: 8%;
-    .line{
+    margin: 8% 0;
+
+
+    .line {
 
         margin: 3px;
         display: inline-block;
         transform: scaleX(3);
     }
-    .text{
+
+    .text {
         white-space: nowrap;
     }
 }
-
 
 
 .inputField {
@@ -100,7 +119,7 @@
 }
 
 .signInBtn {
-    width: 80%;
+    width: 100%;
     padding: 12px;
     border-radius: 12px;
     margin-top: 20px;
@@ -111,7 +130,7 @@
 }
 
 .registerBtn {
-    width: 80%;
+    width: 100%;
     padding: 12px;
     border-radius: 12px;
     margin-top: 10px;
