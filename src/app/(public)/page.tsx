@@ -1,66 +1,77 @@
 import Image from "next/image";
 
+import HeroBanner from "@/widgets/HeroBanner/HeroBanner";
+import heroData from '@/data/heroBanner.json';
+import products from '@/data/products.json';
+
+import styles from "./page.module.scss";
+
 export default function Home() {
     return (
-        <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-            <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-                <Image
-                    className="dark:invert"
-                    src="/next.svg"
-                    alt="Next.js logo"
-                    width={100}
-                    height={20}
-                    priority
-                />
-                <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-                    <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-                        To get started, edit the page.tsx file.
-                    </h1>
-                    <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-                        Looking for a starting point or more instructions? Head
-                        over to{" "}
-                        <a
-                            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-                            className="font-medium text-zinc-950 dark:text-zinc-50"
-                        >
-                            Templates
-                        </a>{" "}
-                        or the{" "}
-                        <a
-                            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-                            className="font-medium text-zinc-950 dark:text-zinc-50"
-                        >
-                            Learning
-                        </a>{" "}
-                        center.
-                    </p>
+        <main className="container">
+            <HeroBanner
+                image={heroData.image}
+                title={heroData.title}
+                description={heroData.description}
+                link={heroData.link}
+            />
+
+            <div className={styles.catalog}>
+                <h1>Catalog</h1>
+
+                <div className={styles.catalogHeader}>
+                    <div className={styles.catalogFilters}>
+                        <div className={styles.catalogFilter}>
+                            sort
+
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M3 7.5 7.5 3m0 0L12 7.5M7.5 3v13.5m13.5 0L16.5 21m0 0L12 16.5m4.5 4.5V7.5" />
+                            </svg>
+                        </div>
+
+                        <div className={styles.catalogFilter}>
+                            filter
+
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-9.75 0h9.75" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div className={styles.catalogInfo}>
+                        <span className={styles.catalogCount}>320 styles found</span>
+                    </div>
                 </div>
-                <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-                    <a
-                        className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-                        href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <Image
-                            className="dark:invert"
-                            src="/vercel.svg"
-                            alt="Vercel logomark"
-                            width={16}
-                            height={16}
-                        />
-                        Deploy Now
-                    </a>
-                    <a
-                        className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-                        href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Documentation
-                    </a>
+                <div className={styles.catalogProducts}>
+                    {products.map((product, index) => (
+                        <div key={index} className={styles.catalogProduct}>
+                            <div className={styles.catalogProductImage}>
+                                <Image
+                                    src={product.image.src}
+                                    alt={product.image.alt}
+                                    width={413}
+                                    height={387}
+                                />
+                                <a href="#" className={styles.catalogProductButton}>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                                    </svg>
+                                </a>
+                            </div>
+
+                            <div className={styles.catalogProductInfo}>
+                                <h4 className={styles.catalogProductTitle}>{product.title}</h4>
+                                <span className={styles.catalogProductPrice}>{product.price}</span>
+                            </div>
+                            <a href="#" className="bit-primary-thin">More colours</a>
+                        </div>
+                    ))}
                 </div>
-            </main>
-        </div>
+                <div className={styles.catalogPagination}>
+                    <p className={styles.catalogPaginationInfo}>You've viewed 72 of 6,499 products</p>
+                    <a href="#" className={styles.catalogPaginationButton}>Load More</a>
+                </div>
+            </div>
+        </main>
     );
 }

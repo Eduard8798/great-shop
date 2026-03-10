@@ -1,0 +1,19 @@
+@use "@/styles/variables" as *;
+
+.btn-primary {
+    font-size: $font-size;
+    line-height: 1;
+    padding: 12px 16px;
+    color: $color-white-fa;
+    background: $color-black;
+    text-transform: lowercase;
+}
+
+.bit-primary-thin {
+    font-size: $font-size;
+    font-weight: $font-light;
+    line-height: 1;
+    padding: 7px 16px;
+    color: $color-white;
+    background: $color-black;
+}

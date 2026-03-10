@@ -1,0 +1,15 @@
+{
+  "image": {
+    "src": "/images/heroBanner.jpg",
+    "alt": "Shop Photo"
+  },
+  "title": "Discover Your Style",
+  "description": [
+    "Step into a world where fashion meets comfort. Our curated collection brings together the latest trends in clothing and footwear, designed for those who refuse to compromise on quality or style.",
+    "From everyday essentials to statement pieces, find everything you need to express your unique personality and feel confident with every step. Step into a world where fashion meets comfort."
+  ],
+  "link": {
+    "href": "/",
+    "label": "shop now"
+  }
+}
