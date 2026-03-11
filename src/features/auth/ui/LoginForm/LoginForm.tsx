@@ -1,54 +1,94 @@
 import Image from "next/image";
 import styles from "../LoginForm/Login.module.scss";
-import girlLogin from "../../../../../public/images/girlLogin.png";
+import loginGirlImg from "../../../../../public/images/loginGirlImg.png";
+import {FcGoogle} from "react-icons/fc";
+import {SiGmail} from 'react-icons/si';
+import GoogleLogo from '../LoginForm/icon/GoogleIcon.png'
+import AppleLogo from '../LoginForm/icon/AppleLogo.png'
+import FaceLogo from '../LoginForm/icon/FaceBookLogo.png'
+import {family} from "detect-libc";
 
 export default function LoginForm() {
     return (
         <div className={styles.container}>
+
             {/*  Left side with image */}
+
             <div className={styles.left}>
                 <Image
-                    src={girlLogin}
+                    src={loginGirlImg}
                     alt="Shop Photo"
                     layout="fill"
                     objectFit="cover"
                 />
             </div>
 
-            {/* First side with form */}
+            {/* Right side with form */}
             <div className={styles.right}>
-                <h1 className={styles.title}>Great Shop</h1>
-                <h2 className={styles.subtitle}>Sign in Great Shop</h2>
+                <div className={styles.formWrapper}>
 
-                <div className={styles.socialButtons}>
-                    <button className={styles.googleBtn}>
-                        Sign in with Google
-                    </button>
-                    <button className={styles.emailBtn}>
-                        Sign in with Email
-                    </button>
+                    <div className={styles.header}>
+                        <p>Welcome! 👋 </p>
+                        <p>Please login here</p>
+                    </div>
+
+                    <div className={styles.filed}>
+                        <label htmlFor={'email'}>Email Address</label>
+                        <input
+                            id={'email'}
+                            type={"email"}
+                            placeholder={'robertfox@example.com'}
+                        />
+                    </div>
+
+                    <div className={styles.filed}>
+                        <label htmlFor={'email'}>Password</label>
+                        <input
+                            id={'password'}
+                            type={"password"}
+                            placeholder={'00000000'}
+                        />
+                    </div>
+
+                    <div className={styles.optinalRow}>
+                        <label className={styles.checkbox}>
+                            <input
+                                type={"checkbox"}
+                            />
+                            <span> Remember me</span>
+                        </label>
+
+                        <span className={styles.forgBtn}>
+                            Forgot Password?
+                        </span>
+                    </div>
+                    <button className={styles.loginBtn}>Login</button>
+                    <span className={styles.createAccount}>
+                        <Image
+                            src={GoogleLogo}
+                            alt="Google"
+                            className="w-4 h-4"
+                        />
+
+                        <Image
+                            src={FaceLogo}
+                            alt="FaceBook"
+                            className="w-4 h-4"
+                        />
+                        <Image
+                            src={AppleLogo}
+                            alt="Apple"
+                            className="w-4 h-4"
+                        />
+                        <p className={styles.createAccount}>
+                        Create new account?
+                    </p>
+                    </span>
+
                 </div>
 
-                <div className={styles.or}>- OR -</div>
-
-                <input
-                    type="email"
-                    placeholder="Email"
-                    className={styles.inputField}
-                />
-                <input
-                    type="password"
-                    placeholder="Password"
-                    className={styles.inputField}
-                />
-                <div className={styles.topBnt}>
-                    <button className={styles.signInBtn}>Sign In</button>
-                    <button className={styles.registerBtn}>Register Now</button>
-                </div>
-                <div className={styles.forgot}>
-                    <a href="#">Forgot Password?</a>
-                </div>
             </div>
         </div>
     );
 }
+
