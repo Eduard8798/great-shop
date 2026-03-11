@@ -9,6 +9,13 @@ import appleLogo from "../../../../../public/icons/AppleLogo.svg";
 
 export default function RegisterForm() {
     const [isChecked, setIsChecked] = useState(false);
+
+    const [formData, setFormData] = useState({
+        firstName: "",
+        lastName: "",
+        email: "",
+        password: "",
+    });
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
 
@@ -16,12 +23,19 @@ export default function RegisterForm() {
             alert("Please agree to the Terms & Conditions and Privacy Policy.");
             return;
         }
-        console.log("Form submitted");
+
+        console.log("Form Data:", formData);
+    };
+
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value,
+        });
     };
 
     return (
         <div className={styles.container}>
-            {/*  Left side with image */}
             <div className={styles.left}>
                 <Image
                     src={poster}
@@ -32,7 +46,6 @@ export default function RegisterForm() {
                 />
             </div>
 
-            {/* First side with form */}
             <div className={styles.right}>
                 <h1 className={styles.title}>Create New Account</h1>
                 <h2 className={styles.subtitle}>Please enter details</h2>
@@ -43,7 +56,10 @@ export default function RegisterForm() {
                         <input
                             type="text"
                             placeholder="First Name"
+                            name="firstName"
                             className={styles.inputField}
+                            value={formData.firstName}
+                            onChange={handleChange}
                         />
                     </div>
                     <div className={styles.inputContainer}>
@@ -51,7 +67,10 @@ export default function RegisterForm() {
                         <input
                             type="text"
                             placeholder="Last Name"
+                            name="lastName"
                             className={styles.inputField}
+                            value={formData.lastName}
+                            onChange={handleChange}
                         />
                     </div>
                     <div className={styles.inputContainer}>
@@ -59,7 +78,10 @@ export default function RegisterForm() {
                         <input
                             type="email"
                             placeholder="Email"
+                            name="email"
                             className={styles.inputField}
+                            value={formData.email}
+                            onChange={handleChange}
                         />
                     </div>
                     <div className={styles.inputContainer}>
@@ -67,7 +89,10 @@ export default function RegisterForm() {
                         <input
                             type="password"
                             placeholder="Password"
+                            name="password"
                             className={styles.inputField}
+                            value={formData.password}
+                            onChange={handleChange}
                         />
                     </div>
                     <div
