@@ -1,0 +1,6 @@
+@use "@/styles/variables" as *;
+
+.container {
+    margin: 0 auto;
+    max-width: $layout-desktop;
+}

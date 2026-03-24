@@ -1,0 +1,88 @@
+@use "@/styles/variables" as *;
+
+.catalog {
+    margin-bottom: 180px;
+}
+
+.catalogHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.catalogFilters {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.catalogFilter {
+    display: flex;
+    padding: 0 16px;
+
+    svg {
+        margin-left: 10px;
+    }
+}
+
+.catalogCount {
+    font-weight: $font-light;
+}
+
+.catalogProducts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.catalogProduct {
+    margin-bottom: 100px;
+}
+
+.catalogProductImage {
+    position: relative;
+    margin-bottom: 16px;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.catalogProductButton {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: $color-black;
+    color: $color-white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.catalogProductInfo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.catalogPagination {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.catalogPaginationInfo {
+    font-weight: $font-light;
+    margin-bottom: 24px;
+}
+
+.catalogPaginationButton {
+    padding: 10px;
+    background: $color-black;
+    color: $color-white;
+    font-weight: $font-medium;
+}

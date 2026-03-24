@@ -1,0 +1,23 @@
+@use "@/styles/variables" as *;
+
+.container {
+    gap: 48px;
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.image {
+    width: 70%;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.button {
+    align-self: self-start;
+}
