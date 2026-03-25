@@ -1,0 +1,24 @@
+.navList {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    justify-content: center;
+}
+
+.navItem {
+    a {
+        display: inline-flex;
+        padding: 16px;
+    }
+}
+
+.navLink {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    transition: text-decoration 0.3s ease;
+
+    &:hover {
+        text-decoration-color: inherit;
+    }
+}

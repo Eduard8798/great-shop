@@ -1,0 +1,74 @@
+[
+  {
+    "image": {
+      "src": "/images/product1.jpg",
+      "alt": "Product Photo"
+    },
+    "title": "Essential Cotton Tee",
+    "price": "$35"
+  },
+  {
+    "image": {
+      "src": "/images/product2.jpg",
+      "alt": "Product Photo"
+    },
+    "title": "Red Oversized Hoodie",
+    "price": "$135"
+  },
+  {
+    "image": {
+      "src": "/images/product3.jpg",
+      "alt": "Product Photo"
+    },
+    "title": "Green Oversized Hoodie",
+    "price": "$135"
+  },
+    {
+    "image": {
+      "src": "/images/product1.jpg",
+      "alt": "Product Photo"
+    },
+    "title": "Essential Cotton Tee",
+    "price": "$35"
+  },
+  {
+    "image": {
+      "src": "/images/product2.jpg",
+      "alt": "Product Photo"
+    },
+    "title": "Red Oversized Hoodie",
+    "price": "$135"
+  },
+  {
+    "image": {
+      "src": "/images/product3.jpg",
+      "alt": "Product Photo"
+    },
+    "title": "Green Oversized Hoodie",
+    "price": "$135"
+  },
+    {
+    "image": {
+      "src": "/images/product1.jpg",
+      "alt": "Product Photo"
+    },
+    "title": "Essential Cotton Tee",
+    "price": "$35"
+  },
+  {
+    "image": {
+      "src": "/images/product2.jpg",
+      "alt": "Product Photo"
+    },
+    "title": "Red Oversized Hoodie",
+    "price": "$135"
+  },
+  {
+    "image": {
+      "src": "/images/product3.jpg",
+      "alt": "Product Photo"
+    },
+    "title": "Green Oversized Hoodie",
+    "price": "$135"
+  }
+]

@@ -1,19 +1,20 @@
-import React from "react";
+import Image from "next/image";
+import Link from "next/link";
+
+import styles from "../Footer/Footer.module.scss";
 
 export default function Footer() {
     return (
-        <footer className="bg-gray-800 text-white p-4">
-            <div className="container mx-auto text-center">
-                <p>© 2026 Great Shop. All rights reserved.</p>
-                <p>
-                    <a href="#" className="hover:underline">
-                        Privacy Policy
-                    </a>{" "}
-                    |{" "}
-                    <a href="#" className="hover:underline">
-                        Terms of Service
-                    </a>
-                </p>
+        <footer className={styles.footer}>
+            <div className="container">
+                <Link href="/">
+                    <Image
+                        src={"/images/logoWhite.png"}
+                        alt="Shop Photo"
+                        width={219}
+                        height={50}
+                    />
+                </Link>
             </div>
         </footer>
     );
