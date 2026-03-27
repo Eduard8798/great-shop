@@ -78,14 +78,8 @@ export default function LoginForm() {
                             alt="Apple"
                             className="w-4 h-5"
                         />
-                        <Link href={'/registration'}>
-                        <p className={styles.createAccount}
-                        >
+                        <Link href={'/registration'}>Create new account?</Link>
 
-
-                        Create new account?
-                    </p>
-                            </Link>
                     </span>
 
                 </div>
