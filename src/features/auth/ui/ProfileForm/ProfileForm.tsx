@@ -49,8 +49,9 @@ const ProfileForm = () => {
                     >{value.icon} {value.name}</div>
                 ))}
             </span>
+            <ProfileFormList/>
         </div>
-        <ProfileFormList/>
+
         </>
     );
 };

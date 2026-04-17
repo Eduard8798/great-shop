@@ -1,0 +1,27 @@
+.bodyFiledInput{
+    display: flex;
+
+    background-color: #2563eb;
+    gap:2%;
+
+}
+.filedInput{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2%;
+    background-color: #c66718;
+    width: 41%;
+
+
+    input {
+
+        font-weight: 500;
+        border-radius: 8px;
+        border: 1px solid #000000;
+        padding: 2% 6% 2% 6%;
+
+    }
+    label{
+        margin-bottom: 3%;
+    }
+}
