@@ -37,7 +37,7 @@ const ProfileForm = () => {
     return (
         <>
         <div className={styles.headerProfile}>
-            <span className={styles.main}>
+            <div className={styles.main}>
 
                 <div className={styles.nameUser}>
                    <div>Hello</div>
@@ -46,9 +46,9 @@ const ProfileForm = () => {
                 {listMain.map(value => (
                     <div key={value.id} className={value.active ? styles.listItemMainActive : styles.listItemMain}
                      onClick={()=>changeActive(value.id)}
-                    >{value.icon} {value.name}</div>
+                    >{value.icon}{value.name}</div>
                 ))}
-            </span>
+            </div>
             <ProfileFormList/>
         </div>
 

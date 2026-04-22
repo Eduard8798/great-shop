@@ -1,7 +1,7 @@
 .headerProfile {
+    margin-left: 3%;
+    margin-right: 3%;
 
-    margin-left: 5%;
-    margin-right: 5%;
 
 }
 
@@ -9,40 +9,42 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2%;
+    gap: 12px;
     height: 15vh;
-
-    right: 100px;
     border-top: 1px solid #030303;
     border-bottom: 1px solid #030303;
 }
 
 .nameUser {
-    padding: 2%;
-
+    margin-right: 3%;
     span {
         font-size: 32px;
         font-weight: bold;
     }
-
-
 }
 
 .listItemMain {
-    min-width: 150px;
+
     display: flex;
+    align-items: center;
     gap: 15%;
     padding: 0.5%;
     border: 1px solid #000000;
     border-radius: 8px;
+    white-space: nowrap;
+    font-size: 16px;
+
 }
+
 .listItemMainActive{
-    min-width: 150px;
+
     display: flex;
+    align-items: center;
     gap: 15%;
     padding: 0.5%;
     border: 1px solid #000000;
     border-radius: 10px;
     background-color: #030303;
     color: #ffffff;
+
 }

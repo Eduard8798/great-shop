@@ -1,27 +1,24 @@
-.bodyFiledInput{
-    display: flex;
-
-    background-color: #2563eb;
-    gap:2%;
-
+.nameSetting{
+    font-size: 20px;
+    font-weight: 400;
+    margin: 2% 0 2% 0;
 }
-.filedInput{
+.form {
+    display: flex;
+}
+
+.formDataUser {
     display: flex;
     flex-direction: column;
-    margin-bottom: 2%;
-    background-color: #c66718;
-    width: 41%;
+    margin: 0 1% 0 0;
 
 
     input {
 
-        font-weight: 500;
+        width: 413px;
+        margin:3% 3% 3% 0;
+        border: 1px solid #222;
         border-radius: 8px;
-        border: 1px solid #000000;
-        padding: 2% 6% 2% 6%;
-
-    }
-    label{
-        margin-bottom: 3%;
+        padding: 8px;
     }
 }
