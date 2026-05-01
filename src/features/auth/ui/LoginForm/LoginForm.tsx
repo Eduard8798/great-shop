@@ -1,12 +1,10 @@
 import Image from "next/image";
 import styles from "../LoginForm/Login.module.scss";
 import loginGirlImg from "../../../../../public/images/loginGirlImg.png";
-import {FcGoogle} from "react-icons/fc";
-import {SiGmail} from 'react-icons/si';
 import GoogleLogo from '../LoginForm/icon/GoogleIcon.png'
 import AppleLogo from '../LoginForm/icon/AppleLogo.png'
 import FaceLogo from '../LoginForm/icon/FaceBookLogo.png'
-import {family} from "detect-libc";
+import Link from "next/link";
 
 export default function LoginForm() {
     return (
@@ -67,22 +65,21 @@ export default function LoginForm() {
                         <Image
                             src={GoogleLogo}
                             alt="Google"
-                            className="w-4 h-4"
+                            className="w-5 h-5"
                         />
 
                         <Image
                             src={FaceLogo}
                             alt="FaceBook"
-                            className="w-4 h-4"
+                            className="w-4 h-5"
                         />
                         <Image
                             src={AppleLogo}
                             alt="Apple"
-                            className="w-4 h-4"
+                            className="w-4 h-5"
                         />
-                        <p className={styles.createAccount}>
-                        Create new account?
-                    </p>
+                        <Link href={'/registration'}>Create new account?</Link>
+
                     </span>
 
                 </div>
