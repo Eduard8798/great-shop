@@ -1,0 +1,113 @@
+.container {
+
+    display: flex;
+    margin: 0 0 10% 0;
+}
+
+.left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.images {
+
+    flex: 1;
+    display: flex;
+    align-items: center;
+
+}
+
+.image {
+
+}
+
+.imagesGalery {
+
+    flex: 1;
+    display: flex;
+}
+
+.info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 13%;
+}
+
+.title {
+    display: flex;
+    justify-content: flex-start;
+    gap: 50%
+}
+
+.descriptonText {
+    max-width: 50%;
+}
+
+.buttonsSize {
+    display: flex;
+    flex-direction: row;
+    gap: 1%;
+    margin: 3% 0 3% 0;
+}
+
+.buttonSizeItem {
+
+    border: solid 1px #666666;
+    padding: 2%;
+    border-radius: 8px;
+    width: 10%;
+}
+.currentButtonSizeItem{
+    border: solid 1px #666666;
+    padding: 2%;
+    border-radius: 8px;
+    width: 10%;
+    background-color: #131118;
+    color: #fafafa;
+}
+
+.stars {
+    margin: 3% 0 3% 0;
+}
+
+.containerColor {
+    display: flex;
+    flex-direction: row;
+}
+.currentColor{
+    border-bottom: solid 1px #131118;
+}
+.currentColorItem{
+
+}
+
+
+.actionsButtons {
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+    margin: 3% 0 3% 0;
+}
+
+.actionsButtonsBodyBuy {
+    background-color: #131118;
+    color: #fafafa;
+    border: solid 1px #666666;
+    padding: 2% 10% 2% 10%;
+}
+
+.actionsButtonsBodyAdd {
+    border: solid 1px #666666;
+    padding: 2% 10% 2% 10%;
+}
+.cuurentsLink{
+    display: flex;
+    flex-direction: column;
+    gap:4%;
+
+
+}

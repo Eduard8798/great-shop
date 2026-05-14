@@ -1,0 +1,26 @@
+.catalog{
+
+    margin: 2%;
+}
+.catalogList{
+    display: flex;
+    position: relative;
+
+}
+.btnAdd{
+    position: absolute;
+    right: 1px;
+}
+.catalogTitle{
+   font-size: 36px;
+    margin: 2%;
+}
+.catalogProduct{
+
+}
+.titleInfoImage{
+    display: flex;
+    justify-content: space-between;
+    margin: 2%;
+
+}
