@@ -2,6 +2,7 @@ import "@/styles/global.scss";
 
 import Header from "@/widgets/Header/Header";
 import Footer from "@/widgets/Footer/Footer";
+import { AuthProvider } from "@/shared/auth/AuthProvider";
 
 export default function RootLayout({
     children,
@@ -11,14 +12,11 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body>
-                {/* Header */}
-                <Header />
-
-                {/* Main content */}
-                <main>{children}</main>
-
-                {/* Footer */}
-                <Footer />
+                <AuthProvider>
+                    <Header />
+                    <main>{children}</main>
+                    <Footer />
+                </AuthProvider>
             </body>
         </html>
     );
